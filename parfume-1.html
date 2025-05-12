@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Landing Page Parfum</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    *{
+       scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+<header class="bg-white py-4 fixed-top">
+  <div class="container text-center">
+    <h1 class="fw-bold text-secondary">RFZ Fragrant</h1>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-top border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+          <path d="M8 0L0 8l3 7h10l3-7-8-8zM7 9h2v7H7V9z"/>
+        </svg> Navbar
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tentang">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+          <li class="nav-item"><a class="nav-link active" href="parfume.html">Logout</a></li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Cari parfum...">
+          <button class="btn btn-outline-success" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.742a6.5 6.5 0 1 0-1.415 1.415l3.29 3.29a1 1 0 0 0 1.415-1.415l-3.29-3.29zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="container-fluid p-0">
+  <div id="carouselParfum" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselParfum" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselParfum" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselParfum" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://www.greenpeace.org/static/planet4-indonesia-stateless/2023/08/9c0e8f11-microsite-assets-greenpeace_main-page-desktop-1024x576.png" class="d-block w-100 img-fluid object-fit-contain bg-dark" 
+        style="height:500px;" alt="Parfum 1">
+        <div class="carousel-caption d-none d-md-block bg-white bg-opacity-75 rounded p-3">
+          <h5 class="text-dark">Keanggunan dalam Setiap Tetes</h5>
+          <p class="text-dark">Parfum eksklusif untuk jiwa yang berkelas. Rasakan kesegaran dan keanggunan yang tercipta dari setiap tetesnya, memberikan kesan yang mendalam pada setiap langkah Anda.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://jiniso.id/cdn/shop/files/1_cd531740-83c8-45f7-8d48-6020f0fb33bc.jpg?v=1744004310&width=1445" class="d-block w-100 img-fluid object-fit-contain bg-dark" 
+        style="height:500px;" alt="Parfum 2">
+        <div class="carousel-caption d-none d-md-block bg-white bg-opacity-75 rounded p-3">
+          <h5 class="text-dark">Wangi yang Menggoda</h5>
+          <p class="text-dark">Temukan pesona aroma terbaik dunia. Parfum ini diciptakan dengan keahlian tinggi untuk menggoda indera Anda, menghadirkan sentuhan keanggunan dalam setiap hirupan.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.olx.co.id/news/wp-content/uploads/2024/06/Parfum-Pria-696x365.jpg"
+        class="d-block w-100 img-fluid object-fit-contain bg-dark" 
+        style="height:500px;" alt="Parfum 3">
+        <div class="carousel-caption d-none d-md-block bg-white bg-opacity-75 rounded p-3">
+          <h5 class="text-dark">Sentuhan Aroma Elegan</h5>
+          <p class="text-dark">Setiap hari lebih bermakna dengan parfum pilihan. Aroma elegan yang dapat menemani hari Anda dengan kesegaran yang bertahan lama, menjadikan setiap momen lebih istimewa.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselParfum" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Sebelumnya</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselParfum" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Selanjutnya</span>
+    </button>
+  </div>
+
+  <section id="tentang" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4">Tentang Kami</h2>
+      <p class="lead">RFZ Fragrant adalah brand parfum terpercaya yang menghadirkan wangi terbaik dari seluruh dunia. Kami percaya setiap aroma menciptakan kenangan tak terlupakan. Dengan pengalaman bertahun-tahun, kami terus berinovasi dalam menciptakan parfum berkualitas yang memenuhi keinginan pelanggan kami. Kami berkomitmen untuk menyediakan produk parfum premium dengan harga terjangkau.</p>
+    </div>
+  </section>
+
+  <section id="produk" class="py-5 bg-white">
+  <div class="container text-center">
+    <h2 class="mb-4">Produk Kami</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="ratio ratio-1x1">
+            <img src="https://images.pexels.com/photos/1557980/pexels-photo-1557980.jpeg?auto=compress&cs=tinysrgb&w=600"
+              class="card-img-top object-fit-cover" alt="Parfum 1" style="object-fit: cover;">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Parfum Elegant</h5>
+            <p class="card-text">Aroma mewah yang cocok untuk acara istimewa. Parfum ini memberikan kesan berkelas dan elegan,
+              menjadikannya pilihan sempurna untuk momen-momen penting dalam hidup Anda.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="ratio ratio-1x1">
+            <img src="https://images.pexels.com/photos/755992/pexels-photo-755992.jpeg?auto=compress&cs=tinysrgb&w=600"
+              class="card-img-top object-fit-cover" alt="Parfum 2" style="object-fit: cover;">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Parfum Fresh</h5>
+            <p class="card-text">Menyegarkan untuk digunakan sepanjang hari. Dengan wangi yang ringan dan menyegarkan, parfum ini
+              cocok menemani kegiatan sehari-hari Anda, memberikan kesegaran yang tahan lama.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="ratio ratio-1x1">
+            <img src="https://images.pexels.com/photos/965990/pexels-photo-965990.jpeg?auto=compress&cs=tinysrgb&w=600"
+              class="card-img-top object-fit-cover" alt="Parfum 3" style="object-fit: cover;">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Parfum Exotic</h5>
+            <p class="card-text">Aroma eksotis yang membangkitkan rasa percaya diri. Dengan aroma yang unik dan memikat, parfum ini
+              ideal untuk Anda yang ingin menonjolkan kepribadian yang berani dan penuh percaya diri.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section id="team" class="py-5 bg-white">
+    <div class="container text-center">
+      <h2 class="mb-4">Team Kami</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://images.pexels.com/photos/1136575/pexels-photo-1136575.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top rounded-circle mx-auto mt-4" style="width: 150px; height: 150px;" alt="CEO">
+            <div class="card-body">
+              <h5 class="card-title">Rajendra AF</h5>
+              <p class="card-text">CEO & Founder. Dengan pengalaman lebih dari 10 tahun di industri parfum, Rajendra adalah otak dibalik MY Parfum, yang berkomitmen untuk menyediakan produk berkualitas tinggi dan inovatif untuk pelanggan.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://images.pexels.com/photos/6549377/pexels-photo-6549377.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top rounded-circle mx-auto mt-4" style="width: 150px; height: 150px;" alt="Marketing">
+            <div class="card-body">
+              <h5 class="card-title">Muhammad Nur Rajif</h5>
+              <p class="card-text">Marketing Head. Bertanggung jawab dalam mengembangkan strategi pemasaran yang efektif untuk meningkatkan brand awareness dan penjualan produk MY Parfum di seluruh dunia.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top rounded-circle mx-auto mt-4" style="width: 150px; height: 150px;" alt="Creative Director">
+            <div class="card-body">
+              <h5 class="card-title">Hendra AJ</h5>
+              <p class="card-text">Creative Director. Hendra bertanggung jawab atas desain produk dan identitas visual MY Parfum. Memastikan setiap parfum tidak hanya memberikan pengalaman wangi yang luar biasa, tetapi juga memiliki kemasan yang elegan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <section id="testimoni" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4">Apa Kata Mereka</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm p-3">
+          <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=600" 
+               class="rounded-circle mx-auto mb-3" 
+               style="width: 140px; height: 140px; object-fit: cover;" 
+               alt="Pelanggan 1">
+          <div class="card-body">
+            <p class="card-text">"Aromanya sangat tahan lama dan elegan! Saya selalu mendapatkan pujian sejak memakai parfum dari RFZ Fragrant."</p>
+            <h6 class="card-title mt-3">– Amanda, Jakarta</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm p-3">
+          <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=600" 
+               class="rounded-circle mx-auto mb-3" 
+               style="width: 140px; height: 140px; object-fit: cover;" 
+               alt="Pelanggan 2">
+          <div class="card-body">
+            <p class="card-text">"Pilihan aroma yang banyak dan harga sangat terjangkau untuk kualitas premium. Sangat direkomendasikan!"</p>
+            <h6 class="card-title mt-3">– Reza, Bandung</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm p-3">
+          <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=600" 
+               class="rounded-circle mx-auto mb-3" 
+               style="width: 140px; height: 140px; object-fit: cover;" 
+               alt="Pelanggan 3">
+          <div class="card-body">
+            <p class="card-text">"Layanan cepat dan ramah, dan parfum favorit saya kini selalu tersedia di sini. Terima kasih RFZ Fragrant!"</p>
+            <h6 class="card-title mt-3">– Dina, Surabaya</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <section id="kontak" class="container py-5">
+  <div class="row">
+    <div class="col-md-6 d-flex flex-column">
+      <div class="card p-4 flex-grow-1">
+        <address>
+          <strong>RFZ Fragrant</strong><br>
+          Jl. Tanjung Anom No 02<br>
+          Kota Medan, 20234<br>
+          Telepon: <a href="tel:+62882017296806">+62 8820 1729 6806</a><br>
+          Email: <a href="mailto:rajendrasekolah@gmail.com">rajendrasekolah@gmail.com</a>
+        </address>
+        
+        <h5 class="mt-4">Kirim Pesan</h5>
+        <form action="https://wa.me/62882017296806" method="GET" target="_blank">
+  <div class="mb-3">
+    <label for="name" class="form-label">Nama</label>
+    <input type="text" class="form-control" id="name" placeholder="Nama Anda" required>
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" placeholder="Email Anda" required>
+  </div>
+  <div class="mb-3">
+    <label for="message" class="form-label">Pesan</label>
+    <textarea class="form-control" id="message" rows="4" placeholder="Pesan Anda" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+</form>
+
+      </div>
+    </div>
+
+    <div class="col-md-6 d-flex flex-column">
+      <div class="card p-4 flex-grow-1">
+        <div class="row">
+          <div class="col-md-12 mb-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.9425087463255!2d98.68789587376138!3d3.600644096373473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30313197d3649c7b%3A0x277abfc17800175b!2sJl.%20Tj.%20Anom%20No.2%2C%20Perintis%2C%20Kec.%20Medan%20Tim.%2C%20Kota%20Medan%2C%20Sumatera%20Utara%2020233!5e0!3m2!1sid!2sid!4v1747017446537!5m2!1sid!2sid" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col-md-12">
+            <p><strong>Selamat datang di RFZ Fragrant!</strong><br>
+            Kami adalah toko parfum yang menawarkan berbagai pilihan parfum berkualitas dari merek-merek ternama. Di sini, Anda dapat menemukan aroma yang cocok untuk setiap kesempatan, baik untuk penggunaan sehari-hari atau acara spesial. Toko kami tidak hanya menawarkan parfum yang memikat, tetapi juga memberikan pengalaman berbelanja yang nyaman dan menyenangkan. Jangan ragu untuk berkunjung dan temukan parfum favorit Anda!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="bg-dark text-light text-center py-4 mt-auto">
+  <p>&copy; 2025 RFZ Fragrant. All Rights Reserved.</p>
+  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+    <path d="M8 0L0 8l3 7h10l3-7-8-8zM7 9h2v7H7V9z"/>
+  </svg>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('messahttps://web.whatsapp.com/ge').value;
+
+    const whatsappMessage = `Nama: ${name}%0AEmail: ${email}%0APesan: ${message}`;
+
+    const whatsappURL = `https://wa.me/62882017296806?text=${whatsappMessage}`;
+
+    window.open(whatsappURL, '_blank');
+  });
+</script>
+
+</body>
+</html>
